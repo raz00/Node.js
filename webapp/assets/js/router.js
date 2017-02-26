@@ -1,0 +1,12 @@
+app.config(function($routeProvider){
+	$routeProvider.when("/",{
+		templateUrl:'partials/home.html'
+	}).when("/about",{
+		templateUrl:'partials/about.html'
+	}).when("/contact",{
+		templateUrl:'partials/contact.html'
+	}).when("/courses",{
+		templateUrl:'partials/courses.html',
+		controller:'CourseController'
+	});
+});
